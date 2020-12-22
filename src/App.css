@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+body{
+  margin:0;
+  padding: 0;
+  /* background-color:#cfe0ec !important; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.alert-danger{
+  border-radius: 1.5rem !important;
+  color:#721C24;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Error{
+  font-weight: 600;
+  font-family: Poppins;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.alert-danger{
+  font-family: Poppins;
+  font-weight: 800;
+}
+.input_data[type=text]{
+  text-transform: capitalize;
+  border-radius: 2rem !important;
+  transition:all 0.25s ease-in-out;
+}
+.input_data[type=text]:focus{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 4rem;
+}
+.location{
+  text-transform: capitalize;
+  font-family: Poppins;
+  color: azure;
+}
+.CardStyle{
+  border-radius: 1.5rem !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.card-body{
+  background-color: lightgray;
+  border-radius: 1.5rem !important;
+  background-image: url("../src/imgs/weather-app.jpg");
+}
+.minMax_temp{
+  font-size: 1rem;
+  color: azure;
+}
+.minMax_temp,.temp{
+  /* color:rgb(38, 39, 41); */
+  font-family: Poppins;
+  color: azure;
+}
+.img{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+@media only screen and (min-width: 300px){
+  .alert-danger{
+      font-size: 2rem;
+      font-weight: 900;
+      color:#3792BF !important;
+      transition: 0.5s;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 1px 1px 2px black;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
